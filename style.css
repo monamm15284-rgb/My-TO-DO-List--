@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    color: rgb(1, 175, 1);
+    padding: 20px 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 25px;
+    width: min(90%, 600px);
+    margin: 50px auto 0;
+    padding: 0 0 20px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 0 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+button {
+    background-color: rgb(52, 204, 52);
+    color: white;
+    margin: 0 10px 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 140px;
+    width: auto;
+}
+
+button:hover {
+    background-color: rgb(1, 175, 1);
+}
+
+#Message {
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 10px;
+    margin: 0 10px;
+}
+
+p {
+    margin: 0 10px 10px;
+}
+
+.taskList {
+    list-style: none;
+    padding: 0 10px;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    color: rgb(1, 175, 1);
+    font-weight: bold;
+    background-color: rgb(191, 241, 191);
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    word-break: break-word;
+}
+
+.note {
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 0;
+}
+.deleteBtn {
+    margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 15px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    input,
+    button,
+    p,
+    #Message,
+    .taskList {
+        width: calc(100% - 20px);
+    }
+
+    button {
+        max-width: none;
+    }
+}
